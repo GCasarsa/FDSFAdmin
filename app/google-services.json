@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "733106780616",
+    "firebase_url": "https://fdsf-b223d.firebaseio.com",
+    "project_id": "fdsf-b223d",
+    "storage_bucket": "fdsf-b223d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:733106780616:android:89660c0fd26d245f",
+        "android_client_info": {
+          "package_name": "utn.edu.ar.fdsfadmin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "733106780616-4kcdf9o9sge26jd7kmi84l89ccst3sir.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAGWk-tRsQcsVV7_tYdCsh5DFLpT7isy1g"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

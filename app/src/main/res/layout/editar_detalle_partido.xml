@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:layout_marginTop="5sp"
+        android:layout_marginLeft="5sp"
+        android:layout_marginRight="5sp"
+        android:layout_marginBottom="5sp"
+        >
+
+        <ImageView
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:background="@drawable/escudo_argentinodesancarlos"
+            android:layout_gravity="center"
+            android:id="@+id/ivPartidoEscudoLocal"/>
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="40sp"
+            android:layout_weight="0.3"
+            android:textColor="@color/fuente"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:text="ARGENTINO"
+            android:id="@+id/tvPartidoNombreLocal"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="40sp"
+            android:layout_weight="0.05"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="@color/fuente"
+            android:textSize="30sp"
+            android:id="@+id/tvPartidoResultadoLocal"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="40sp"
+            android:layout_weight="0.05"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="5"
+            android:textColor="@color/fuente"
+            android:textSize="30sp"
+            android:id="@+id/tvPartidoResultadoVisitante" />
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="40sp"
+            android:layout_weight="0.3"
+            android:gravity="center"
+            android:text="COSMOS FC"
+            android:textColor="@color/fuente"
+            android:textSize="16sp"
+            android:id="@+id/tvPartidoNombreVisitante" />
+        <ImageView
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:background="@drawable/escudo_clubcosmos"
+            android:layout_gravity="center|end"
+            android:id="@+id/ivPartidoEscudoVisitante" />
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2sp"
+        android:background="@color/fuente"
+        android:layout_marginBottom="5sp"
+        />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:layout_marginBottom="5sp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="40sp">
+
+                <Button
+                    android:layout_width="0dip"
+                    android:layout_height="40sp"
+                    android:layout_weight="0.25"
+                    android:layout_margin="2sp"
+                    android:background="@drawable/pelota"
+                    android:layout_marginRight="5sp"
+                    android:id="@+id/botonLocalGol"
+                     />
+
+                <Button
+                    android:layout_width="0dip"
+                    android:layout_height="40sp"
+                    android:layout_weight="0.25"
+                    android:layout_margin="2sp"
+                    android:background="@drawable/tarjetaamarilla"
+                    android:layout_marginRight="5sp"
+                    android:id="@+id/botonLocalAmarilla"
+                     />
+
+                <Button
+                    android:layout_width="0dip"
+                    android:layout_height="40sp"
+                    android:layout_weight="0.25"
+                    android:layout_margin="2sp"
+                    android:background="@drawable/tarjetaroja"
+                    android:layout_marginRight="5sp"
+                    android:id="@+id/botonLocalRoja"
+                     />
+
+                <Button
+                    android:layout_width="0dip"
+                    android:layout_height="40sp"
+                    android:layout_weight="0.25"
+                    android:layout_margin="2sp"
+                    android:background="@drawable/cambio"
+                    android:id="@+id/botonLocalCambio"
+                     />
+            </LinearLayout>
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="20sp"
+                android:layout_margin="5sp"
+                android:textColor="@color/fuente"
+                android:id="@+id/spinnerLocalUno" />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="20sp"
+                android:layout_margin="5sp"
+                android:textColor="@color/colorNegro"
+                android:id="@+id/spinnerLocalDos" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5sp">
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="40sp"
+                    android:layout_weight="0.8"
+                    android:text="Minuto:"
+                    android:textColor="@color/fuente"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textSize="20sp"
+                    />
+
+                <EditText
+                    android:layout_width="0dip"
+                    android:layout_height="40sp"
+                    android:layout_weight="0.2"
+                    android:inputType="number"
+                    android:ems="10"
+                    android:text="68"
+                    android:textSize="20sp"
+                    android:textColor="@color/fuente"
+                    android:gravity="center"
+                    android:id="@+id/editTextLocalMinuto" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="40sp">
+
+                <Button
+                    android:layout_width="40sp"
+                    android:layout_height="40sp"
+                    android:layout_marginLeft="5sp"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/boton_aceptar"
+                    android:id="@+id/botonLocalAceptar" />
+
+                <Button
+                    android:layout_width="40sp"
+                    android:layout_height="40sp"
+                    android:layout_marginRight="5sp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/boton_cancelar"
+                    android:id="@+id/botonLocalCancelar" />
+            </RelativeLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:layout_marginBottom="5sp">
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2sp"
+        android:layout_marginBottom="5sp"
+        android:background="@color/fuente"/>
+
+
+</LinearLayout>
